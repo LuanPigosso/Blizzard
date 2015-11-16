@@ -21,7 +21,7 @@ public class movePersonagem : MonoBehaviour {
 	public GameObject invisible;
 
 	//audio
-	public AudioSource audio;
+	//public AudioSource audio;
 	//public AudioClip soundJump;
 	//public AudioClip soundSlide;
 

@@ -30,11 +30,11 @@ public class VectorMap : MonoBehaviour {
 	}*/
 
 	public  void CreateMap(){
-		if(i>=20){
-			i =21;
+		if(i>=15){
+			i =16;
 		}else{
 
-			for(i = 1; i<=20;i++){
+			for(i = 1; i<=15;i++){
 				//almentar randon em mais 1
 				num = Random.Range(0,3);
 				atual.Add ((GameObject)Instantiate (Maps[num],transform.position + new Vector3(0*i,-393*i,-1170*i) , Maps [0].transform.rotation));
