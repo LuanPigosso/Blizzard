@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: 71151d5c97076fb47bcbf038e0ddeb8a
+timeCreated: 1447369840
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Conjunto_002
+    100004: Conjunto_002_MeshPart0
+    100006: Conjunto_002_MeshPart1
+    100008: Conjunto_002_MeshPart10
+    100010: Conjunto_002_MeshPart11
+    100012: Conjunto_002_MeshPart2
+    100014: Conjunto_002_MeshPart3
+    100016: Conjunto_002_MeshPart4
+    100018: Conjunto_002_MeshPart5
+    100020: Conjunto_002_MeshPart6
+    100022: Conjunto_002_MeshPart7
+    100024: Conjunto_002_MeshPart8
+    100026: Conjunto_002_MeshPart9
+    100028: Conjunto_01
+    100030: Conjunto_01_MeshPart0
+    100032: Conjunto_01_MeshPart1
+    100034: Conjunto_01_MeshPart10
+    100036: Conjunto_01_MeshPart11
+    100038: Conjunto_01_MeshPart2
+    100040: Conjunto_01_MeshPart3
+    100042: Conjunto_01_MeshPart4
+    100044: Conjunto_01_MeshPart5
+    100046: Conjunto_01_MeshPart6
+    100048: Conjunto_01_MeshPart7
+    100050: Conjunto_01_MeshPart8
+    100052: Conjunto_01_MeshPart9
+    100054: //RootNode
+    400000: Box001
+    400002: Conjunto_002
+    400004: Conjunto_002_MeshPart0
+    400006: Conjunto_002_MeshPart1
+    400008: Conjunto_002_MeshPart10
+    400010: Conjunto_002_MeshPart11
+    400012: Conjunto_002_MeshPart2
+    400014: Conjunto_002_MeshPart3
+    400016: Conjunto_002_MeshPart4
+    400018: Conjunto_002_MeshPart5
+    400020: Conjunto_002_MeshPart6
+    400022: Conjunto_002_MeshPart7
+    400024: Conjunto_002_MeshPart8
+    400026: Conjunto_002_MeshPart9
+    400028: Conjunto_01
+    400030: Conjunto_01_MeshPart0
+    400032: Conjunto_01_MeshPart1
+    400034: Conjunto_01_MeshPart10
+    400036: Conjunto_01_MeshPart11
+    400038: Conjunto_01_MeshPart2
+    400040: Conjunto_01_MeshPart3
+    400042: Conjunto_01_MeshPart4
+    400044: Conjunto_01_MeshPart5
+    400046: Conjunto_01_MeshPart6
+    400048: Conjunto_01_MeshPart7
+    400050: Conjunto_01_MeshPart8
+    400052: Conjunto_01_MeshPart9
+    400054: //RootNode
+    2300000: Box001
+    2300002: Conjunto_002_MeshPart0
+    2300004: Conjunto_002_MeshPart1
+    2300006: Conjunto_002_MeshPart10
+    2300008: Conjunto_002_MeshPart11
+    2300010: Conjunto_002_MeshPart2
+    2300012: Conjunto_002_MeshPart3
+    2300014: Conjunto_002_MeshPart4
+    2300016: Conjunto_002_MeshPart5
+    2300018: Conjunto_002_MeshPart6
+    2300020: Conjunto_002_MeshPart7
+    2300022: Conjunto_002_MeshPart8
+    2300024: Conjunto_002_MeshPart9
+    2300026: Conjunto_01_MeshPart0
+    2300028: Conjunto_01_MeshPart1
+    2300030: Conjunto_01_MeshPart10
+    2300032: Conjunto_01_MeshPart11
+    2300034: Conjunto_01_MeshPart2
+    2300036: Conjunto_01_MeshPart3
+    2300038: Conjunto_01_MeshPart4
+    2300040: Conjunto_01_MeshPart5
+    2300042: Conjunto_01_MeshPart6
+    2300044: Conjunto_01_MeshPart7
+    2300046: Conjunto_01_MeshPart8
+    2300048: Conjunto_01_MeshPart9
+    3300000: Box001
+    3300002: Conjunto_002_MeshPart0
+    3300004: Conjunto_002_MeshPart1
+    3300006: Conjunto_002_MeshPart10
+    3300008: Conjunto_002_MeshPart11
+    3300010: Conjunto_002_MeshPart2
+    3300012: Conjunto_002_MeshPart3
+    3300014: Conjunto_002_MeshPart4
+    3300016: Conjunto_002_MeshPart5
+    3300018: Conjunto_002_MeshPart6
+    3300020: Conjunto_002_MeshPart7
+    3300022: Conjunto_002_MeshPart8
+    3300024: Conjunto_002_MeshPart9
+    3300026: Conjunto_01_MeshPart0
+    3300028: Conjunto_01_MeshPart1
+    3300030: Conjunto_01_MeshPart10
+    3300032: Conjunto_01_MeshPart11
+    3300034: Conjunto_01_MeshPart2
+    3300036: Conjunto_01_MeshPart3
+    3300038: Conjunto_01_MeshPart4
+    3300040: Conjunto_01_MeshPart5
+    3300042: Conjunto_01_MeshPart6
+    3300044: Conjunto_01_MeshPart7
+    3300046: Conjunto_01_MeshPart8
+    3300048: Conjunto_01_MeshPart9
+    4300000: Box001
+    4300002: Conjunto_002_MeshPart0
+    4300004: Conjunto_002_MeshPart1
+    4300006: Conjunto_002_MeshPart2
+    4300008: Conjunto_002_MeshPart3
+    4300010: Conjunto_002_MeshPart4
+    4300012: Conjunto_002_MeshPart5
+    4300014: Conjunto_002_MeshPart6
+    4300016: Conjunto_002_MeshPart7
+    4300018: Conjunto_002_MeshPart8
+    4300020: Conjunto_002_MeshPart9
+    4300022: Conjunto_002_MeshPart10
+    4300024: Conjunto_002_MeshPart11
+    4300026: Conjunto_01_MeshPart0
+    4300028: Conjunto_01_MeshPart1
+    4300030: Conjunto_01_MeshPart2
+    4300032: Conjunto_01_MeshPart3
+    4300034: Conjunto_01_MeshPart4
+    4300036: Conjunto_01_MeshPart5
+    4300038: Conjunto_01_MeshPart6
+    4300040: Conjunto_01_MeshPart7
+    4300042: Conjunto_01_MeshPart8
+    4300044: Conjunto_01_MeshPart9
+    4300046: Conjunto_01_MeshPart10
+    4300048: Conjunto_01_MeshPart11
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
