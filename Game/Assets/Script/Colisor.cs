@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -7,83 +8,35 @@ public class Colisor : MonoBehaviour {
 	public GameObject invisible;
 
 	//points
-	public UnityEngine.UI.Text txtPoints;
-	public static int points;
-
-	float contPoints;
-	float contRecord;
-	public static string qtpontos;
-	public static string record;
-
-	static string key;
-
+	public static int record;
+	public Text recordText;
+	
 	void start(){
-		key = "highscore";
-		qtpontos = "pontos";
-		points = 0;
-		contPoints = 0;
-		PlayerPrefs.SetInt("points", points);
+		PlayerPrefs.GetInt("recordPrefs"); //load no meu recorde
+		record = PlayerPrefs.GetInt("recordPrefs");// passa o valor do meu recorde para a variavel record(que faz a comparação quando tem a colisão com o personagem)
 	}
 
-	void update(){
-		txtPoints.text = points.ToString();
-	}
+	
 
 	void OnCollisionEnter(Collision collisionInfo){
 		
 		if(collisionInfo.gameObject.tag == "GameOver"){
-			if (PlayerPrefs.HasKey (key)) {// key é o nome da variavel
-				
-				contRecord = PlayerPrefs.GetFloat (key);
-				
-				if (highscore > myscore) { // highscore é o melhor score gravado
-					
-					PlayerPrefs.SetFloat (key, myscore); //myscore é o score da partida
-					
-					highscore = myscore;
-					//score = myscore;
-					
-					//audioFinish.clip = win;
-					PlayerPrefs.Save ();
-					
-				}
-			    //score = highscore;
-                print ("key"+PlayerPrefs.GetFloat (key));
-
-            } else {
-				// se nao tem save, ele cria agora!!!
-				PlayerPrefs.SetFloat (key, myscore);
-				PlayerPrefs.Save ();
-                 print (PlayerPrefs.GetFloat (key));
-			}*/
-	/*		PlayerPrefs.SetInt("points", points);
-			if(qtpontos > PlayerPrefs.GetInt("records")){
-				PlayerPrefs.SetInt("records", qtpontos);
-
-			}*/
-
-			if (contPoints > contRecord){
-				contRecord = contPoints;
-				record = contRecord.ToString();
+		//quando houver colisão	com algum obstaculo que faça ir para o game over
+			PlayerPrefs.SetInt("scorePrefs", Pontos.points);//passo o valor de Pontos.points para o PlayerPrefs(scorePrefs)
+			if(Pontos.points > PlayerPrefs.GetInt("recordPrefs")){//verifico se esta pontuação nova é maior que meu recorde
+				PlayerPrefs.SetInt("recordPrefs", Pontos.points);//se for maior que meu recorde ele salva o novo recorde
 			}
-			print("points colisor " + qtpontos);
 			Application.LoadLevel("GameOver");
 		}
 	}
 
 	void OnTriggerEnter(Collider other){
 		if(other.tag == "Prox"){
-			print("novo mapa");
 			invisible.GetComponent<VectorMap>().CreateMap();
-		}if(other.tag == "Coin"){
-			//print("1 Coin");
-			Destroy(other.gameObject);
-			Pontos.points += 1;
-			contPoints ++;
-			qtpontos = contPoints.ToString();
-			print("cont pontos " + contPoints);
-			print("qtpontos " + qtpontos);
+		}
+		if(other.tag == "Coin"){
+			Destroy(other.gameObject);//destroi o objeto coletado
+			Pontos.points += 1; //faz a soma dos pontos em +1 toda vez que uma moeda é coletada
 		}
 	}
-
 }

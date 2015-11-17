@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class Pontos : MonoBehaviour {
 
-	public UnityEngine.UI.Text txtDistancia;
+	public Text txtDistancia;
 	public static int distancia;
 
-	public UnityEngine.UI.Text txtScores;
+	public Text txtScores;
 	public static int points;
 
 
@@ -28,7 +29,5 @@ public class Pontos : MonoBehaviour {
 	}
 	
 
-	/*void OnGUI(){
-		GUI.Label(new Rect(10,10,105,20),"Pontuação: "+Pontos.scores.ToString());
-	}*/
+	
 }
