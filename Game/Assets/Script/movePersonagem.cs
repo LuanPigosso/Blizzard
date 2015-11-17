@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -15,19 +15,26 @@ public class movePersonagem : MonoBehaviour {
 	
 
 	//points
-	public UnityEngine.UI.Text txtPoints;
-	public static  int points;
+	//public UnityEngine.UI.Text txtPoints;
+	//public static int points;
 	// Use this for initialization
-	public GameObject invisible;
+	//public GameObject invisible;
 
 	//audio
 	//public AudioSource audio;
 	//public AudioClip soundJump;
 	//public AudioClip soundSlide;
 
+	//points
+	//static string key ;
+	//float highscore;
+	//float myscore;
+
+
 	void Start () {
-		points = 0;
-		PlayerPrefs.SetInt("points", points);
+		//key = "highscore";
+		//points = 0;
+		//PlayerPrefs.SetInt("points", points);
 		Physics.gravity = new Vector3(0, -gravity, 0);
 		rigd = GetComponentInParent <Rigidbody>();
 		animator = GetComponentInChildren<Animator>();
@@ -36,9 +43,8 @@ public class movePersonagem : MonoBehaviour {
 	}
 	
 	void Update () {
-
-		txtPoints.text = points.ToString();
-		//rigd.AddTorque(transform.right*speed);
+		
+		//txtPoints.text = points.ToString();
 		movimentation();
 		MoveJoy();
 
@@ -82,25 +88,41 @@ public class movePersonagem : MonoBehaviour {
 			Physics.gravity = new Vector3(0, -gravity, 0);
 		}
 		
-		if(collisionInfo.gameObject.tag == "GameOver"){
+		/*if(collisionInfo.gameObject.tag == "GameOver"){
+			if (PlayerPrefs.HasKey (key)) {// key é o nome da variavel
+				
+				highscore = PlayerPrefs.GetFloat (key);
+				
+				if (highscore > myscore) { // highscore é o melhor score gravado
+					
+					PlayerPrefs.SetFloat (key, myscore); //myscore é o score da partida
+					
+					highscore = myscore;
+					//score = myscore;
+					
+					//audioFinish.clip = win;
+					PlayerPrefs.Save ();
+					
+				}
 
+               
+                
 
-			if(points > PlayerPrefs.GetInt("records")){
-				PlayerPrefs.SetInt("records", points);
+                //score = highscore;
+                print ("key"+PlayerPrefs.GetFloat (key));
+
+            } else {
+				// se nao tem save, ele cria agora!!!
+				PlayerPrefs.SetFloat (key, myscore);
+				PlayerPrefs.Save ();
+                 print (PlayerPrefs.GetFloat (key));
 			}
-			Application.LoadLevel("GameOver");
-		}
-	}
 
-	void OnTriggerEnter(Collider other){
-		if(other.tag == "Prox"){
-			print("novo mapa");
-			invisible.GetComponent<VectorMap>().CreateMap();
-		}if(other.tag == "Coin"){
-			print("1 Coin");
-			Destroy(other.gameObject);
-			Pontos.points += 1;
-		}
+			/*if(points > PlayerPrefs.GetInt("records")){
+				PlayerPrefs.SetInt("records", points);
+			}*/
+			//Application.LoadLevel("GameOver");
+		//}
 	}
 
 	void MoveJoy(){

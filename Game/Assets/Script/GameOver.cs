@@ -7,8 +7,8 @@ public class GameOver : MonoBehaviour {
 	// Update is called once per frame
 	
 	void Start(){
-		points.text = PlayerPrefs.GetInt("points").ToString();
-		records.text = PlayerPrefs.GetInt("records").ToString();
+		points.text = Colisor.qtpontos;
+		records.text = Colisor.record;
 
 	}
 
