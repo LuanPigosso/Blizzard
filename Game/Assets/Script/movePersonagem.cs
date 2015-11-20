@@ -13,38 +13,16 @@ public class movePersonagem : MonoBehaviour {
 	private bool inicio;
 	public float forcejump;
 	
-
-	//points
-	//public UnityEngine.UI.Text txtPoints;
-	//public static int points;
-	// Use this for initialization
-	//public GameObject invisible;
-
-	//audio
-	//public AudioSource audio;
-	//public AudioClip soundJump;
-	//public AudioClip soundSlide;
-
-	//points
-	//static string key ;
-	//float highscore;
-	//float myscore;
-
-
 	void Start () {
-		//key = "highscore";
-		//points = 0;
-		//PlayerPrefs.SetInt("points", points);
 		Physics.gravity = new Vector3(0, -gravity, 0);
-		rigd = GetComponentInParent <Rigidbody>();
+		//rigd = GetComponentInParent <Rigidbody>();
+		rigd = GetComponent <Rigidbody>();
 		animator = GetComponentInChildren<Animator>();
 		inicio = false;
 	
 	}
 	
 	void Update () {
-		
-		//txtPoints.text = points.ToString();
 		movimentation();
 		MoveJoy();
 
@@ -87,48 +65,14 @@ public class movePersonagem : MonoBehaviour {
 			animator.SetBool("jump", false);
 			Physics.gravity = new Vector3(0, -gravity, 0);
 		}
-		
-		/*if(collisionInfo.gameObject.tag == "GameOver"){
-			if (PlayerPrefs.HasKey (key)) {// key é o nome da variavel
-				
-				highscore = PlayerPrefs.GetFloat (key);
-				
-				if (highscore > myscore) { // highscore é o melhor score gravado
-					
-					PlayerPrefs.SetFloat (key, myscore); //myscore é o score da partida
-					
-					highscore = myscore;
-					//score = myscore;
-					
-					//audioFinish.clip = win;
-					PlayerPrefs.Save ();
-					
-				}
 
-               
-                
-
-                //score = highscore;
-                print ("key"+PlayerPrefs.GetFloat (key));
-
-            } else {
-				// se nao tem save, ele cria agora!!!
-				PlayerPrefs.SetFloat (key, myscore);
-				PlayerPrefs.Save ();
-                 print (PlayerPrefs.GetFloat (key));
-			}
-
-			/*if(points > PlayerPrefs.GetInt("records")){
-				PlayerPrefs.SetInt("records", points);
-			}*/
-			//Application.LoadLevel("GameOver");
-		//}
 	}
 
 	void MoveJoy(){
 		if(CrossPlatformInputManager.GetAxis("Horizontal")>0){
 			rigd.velocity = new Vector3(-speed, rigd.velocity.y,rigd.velocity.z);
 			if(!jump){animator.SetBool("right",true);}
+
 			
 		}else if(CrossPlatformInputManager.GetAxis("Horizontal")<0){
 			rigd.velocity = new Vector3(speed, rigd.velocity.y,rigd.velocity.z);
@@ -142,10 +86,10 @@ public class movePersonagem : MonoBehaviour {
 			jump = true;
 			animator.SetBool("jump", true);
 			Physics.gravity = new Vector3(0, -gravity, 0);
-		
-			
 		}
 	}
-
-	
+	public void left(){
+		rigd.velocity = new Vector3(speed, rigd.velocity.y,rigd.velocity.z);
+			if(!jump){animator.SetBool("left",true);}
+	}
 }

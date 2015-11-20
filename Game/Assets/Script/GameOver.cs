@@ -15,7 +15,7 @@ public class GameOver : MonoBehaviour {
 
 	void Update () {
 		if(Input.GetMouseButtonDown(0)){
-			Application.LoadLevel("Mapa_Jogo");
+			Application.LoadLevel("MenuIniciar");
 		}
 	
 	}

@@ -31,7 +31,7 @@ public class Colisor : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		if(other.tag == "Prox"){
+		if(other.tag == "CarregaFase"){
 			invisible.GetComponent<VectorMap>().CreateMap();
 		}
 		if(other.tag == "Coin"){
